@@ -101,38 +101,6 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Addresses">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Addresses\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Addresses.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Colors">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Colors\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Colors.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Drawing">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Drawing\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Drawing.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.ExceptionHandling">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\ExceptionHandling\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.ExceptionHandling.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.Geometries">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.Geometries\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Security">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Security\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Security.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Threading">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Threading\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Threading.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Utils">
-      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Utils\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Utils.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClasses\AbstractStreetAddressableGeographicFeature.cs" />
@@ -187,6 +155,38 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common.Core.Addresses\Src\Main\Common.Core.Addresses.Dev.csproj">
+      <Project>{29C0949B-4D41-4138-B59B-6DE4A6A1774E}</Project>
+      <Name>Common.Core.Addresses.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Colors\Src\Main\Common.Core.Colors.Dev.csproj">
+      <Project>{34A8FC48-16D5-4937-8D33-14AE2EE362F4}</Project>
+      <Name>Common.Core.Colors.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Drawing\Src\Main\Common.Core.Drawing.Dev.csproj">
+      <Project>{282C24E4-E164-4679-AAD4-E640B30404DC}</Project>
+      <Name>Common.Core.Drawing.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.ExceptionHandling\Src\Main\Common.Core.ExceptionHandling.Dev.csproj">
+      <Project>{4A553AE2-F5D1-42B6-BE3A-8442DF626EAF}</Project>
+      <Name>Common.Core.ExceptionHandling.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Geo.Geometries\Src\Main\Common.Core.Geo.Geometries.Dev.csproj">
+      <Project>{E8164C90-2753-46F3-937A-653039318563}</Project>
+      <Name>Common.Core.Geo.Geometries.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Utils\Src\Main\Common.Core.Utils.Dev.csproj">
+      <Project>{0744A732-A7FE-4658-967D-C5A583EF08E4}</Project>
+      <Name>Common.Core.Utils.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!--  
