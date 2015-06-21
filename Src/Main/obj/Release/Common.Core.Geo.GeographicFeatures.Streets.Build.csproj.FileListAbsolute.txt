@@ -1,3 +1,0 @@
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Geo.GeographicFeatures.Streets\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Geo.GeographicFeatures.Streets.dll.config
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Geo.GeographicFeatures.Streets\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Geo.GeographicFeatures.Streets.dll
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Geo.GeographicFeatures.Streets\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Geo.GeographicFeatures.Streets.dll
