@@ -37,6 +37,12 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.AddressPoints
             Geometry = geometry;
         }
 
+        //public PennyAddressPoint(Geometry geometry, Geometry geometry_source)
+        //{
+        //    Geometry = geometry;
+        //    GeometrySource = geometry_source;
+        //}
+
         #region Cloning Functions
 
         object ICloneable.Clone()

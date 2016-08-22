@@ -5,6 +5,7 @@ using USC.GISResearchLab.Common.Core.Geographics.Features.Interfaces;
 using USC.GISResearchLab.Common.Geometries;
 using USC.GISResearchLab.Common.Geometries.Lines;
 using USC.GISResearchLab.Common.Geometries.Points;
+using USC.GISResearchLab.Common.Geometries.Polygons;
 
 namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 {
@@ -44,6 +45,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 
         public NickleStreet() {
             Geometry = new Point(0, 0);
+            GeometrySource = new Polygon();
         }
 
         public NickleStreet(Point start, Point end)

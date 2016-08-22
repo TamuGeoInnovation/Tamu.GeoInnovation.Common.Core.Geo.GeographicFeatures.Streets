@@ -10,6 +10,7 @@ namespace USC.GISResearchLab.Common.Core.Geographics.Features.Interfaces
         #region Properties
 
         public Geometry Geometry { get; set; }
+        public Geometry GeometrySource { get; set; }
 
         #endregion
 

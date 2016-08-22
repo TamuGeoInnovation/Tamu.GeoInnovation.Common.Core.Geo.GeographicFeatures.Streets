@@ -9,6 +9,7 @@ namespace USC.GISResearchLab.Common.Core.Geographics.Features.Interfaces
         #region Properties
 
         Geometry Geometry { get; set; }
+        Geometry GeometrySource { get; set; }
 
         #endregion
 
