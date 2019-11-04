@@ -1,8 +1,8 @@
 namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.Counties
 {
-	/// <summary>
-	/// Summary description for County.
-	/// </summary>
+    /// <summary>
+    /// Summary description for County.
+    /// </summary>
     public class CountyCentroidFeature : FIPSPointFeature
     {
         #region Properties
@@ -18,9 +18,9 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.Counties
 
         #endregion
 
-		public CountyCentroidFeature()
-		{
-			County = 0;
-		}
-	}
+        public CountyCentroidFeature()
+        {
+            County = 0;
+        }
+    }
 }

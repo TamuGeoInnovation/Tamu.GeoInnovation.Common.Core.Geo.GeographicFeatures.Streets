@@ -28,7 +28,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         public double NumberOfLots { get; set; }
         public double NumberOfLanes { get; set; }
         public string LaneCategoryStr { get; set; }
-       
+
 
         #endregion
 
@@ -39,7 +39,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         public AbstractStreetSegmentAddress(string number, string pre, string name, string post, string suffix)
             : this(number, pre, name, post, suffix, null, null, null, null, null, null)
         { }
-        
+
 
         public AbstractStreetSegmentAddress(string number, string pre, string name, string post, string suffix, string suite, string suitenumber)
             : this(number, pre, name, post, suffix, suite, suitenumber, null, null, null, null)

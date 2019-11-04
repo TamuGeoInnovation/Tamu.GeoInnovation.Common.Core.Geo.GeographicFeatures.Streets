@@ -18,38 +18,38 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS
 
         string FeatureName
         {
-            get ;
+            get;
             set;
         }
         double Population
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         double Housing
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         double LandAreaMeters
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         double WaterAreaMeters
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         double LandAreaMiles
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         double WaterAreaMiles
         {
-            get ;
-            set ;
+            get;
+            set;
         }
 
     }

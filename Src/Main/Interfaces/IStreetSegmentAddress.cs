@@ -16,7 +16,7 @@ namespace USC.GISResearchLab.Common.Core.Addresses.Interfaces
         AddressRange AddressRangeHouseNumberRangeMajor { get; set; }
         AddressRange AddressRangeHouseNumberRangeMinor { get; set; }
 
-        
+
 
         StreetNumberRangeType StreetNumberRangeType { get; set; }
         StreetNumberRangeNumericSubType StreetNumberRangeNumericSubType { get; set; }

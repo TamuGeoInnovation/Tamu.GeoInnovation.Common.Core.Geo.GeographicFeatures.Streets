@@ -1,8 +1,8 @@
 namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.CountySubregions
 {
-	/// <summary>
-	/// Summary description for CountySubregion.
-	/// </summary>
+    /// <summary>
+    /// Summary description for CountySubregion.
+    /// </summary>
     public class CountySubregionCentroidFeature : FIPSPointFeature
     {
         #region Properties
@@ -24,10 +24,10 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.CountySubregions
 
         #endregion
 
-		public CountySubregionCentroidFeature()
-		{
-			County = 0;
-			CountySubregion = "";
-		}
-	}
+        public CountySubregionCentroidFeature()
+        {
+            County = 0;
+            CountySubregion = "";
+        }
+    }
 }

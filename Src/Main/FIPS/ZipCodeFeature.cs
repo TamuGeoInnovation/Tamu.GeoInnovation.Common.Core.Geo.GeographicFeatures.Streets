@@ -6,14 +6,14 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.ZipCodes
     public class ZipCodeCentroidFeature : FIPSPointFeature
     {
         #region Properties
-        
+
         #endregion
 
 
 
         public ZipCodeCentroidFeature()
         {
-            
+
         }
     }
 }

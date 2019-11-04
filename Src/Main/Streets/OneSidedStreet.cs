@@ -157,7 +157,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
         }
 
         public OneSidedStreet(Point start, Point end)
-            :base(start, end)
+            : base(start, end)
         {
             Start = start;
             End = end;
@@ -260,7 +260,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
             return ret;
         }
 
-        
+
         #region Cloning Functions
 
         object ICloneable.Clone()

@@ -140,7 +140,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Parcels
                             last.End = next.End;
                         }
                     }
-                        // otherwise extend the current segment to the end of this one
+                    // otherwise extend the current segment to the end of this one
                     else
                     {
                         last.End = next.End;
@@ -174,10 +174,10 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Parcels
                 if (corners.Count == 4)
                 {
 
-                    Point corner0 = (Point) corners[0];
-                    Point corner1 = (Point) corners[1];
-                    Point corner2 = (Point) corners[2];
-                    Point corner3 = (Point) corners[3];
+                    Point corner0 = (Point)corners[0];
+                    Point corner1 = (Point)corners[1];
+                    Point corner2 = (Point)corners[2];
+                    Point corner3 = (Point)corners[3];
 
                     Line segment0 = new Line(corner0.Clone(), corner1.Clone());
                     Line segment1 = new Line(corner1.Clone(), corner2.Clone());
@@ -212,13 +212,13 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Parcels
 
                     if (Bearing.isWithinBearingThreshold(parcelBearing, segment0.Bearing, 15.0))
                     {
-                        parcel.Depth = (segment0Distance + segment2Distance)/2;
-                        parcel.Width = (segment1Distance + segment3Distance)/2;
+                        parcel.Depth = (segment0Distance + segment2Distance) / 2;
+                        parcel.Width = (segment1Distance + segment3Distance) / 2;
                     }
                     else
                     {
-                        parcel.Width = (segment0Distance + segment2Distance)/2;
-                        parcel.Depth = (segment1Distance + segment3Distance)/2;
+                        parcel.Width = (segment0Distance + segment2Distance) / 2;
+                        parcel.Depth = (segment1Distance + segment3Distance) / 2;
                     }
                 }
                 else
@@ -239,7 +239,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Parcels
 
         public virtual Parcel Clone()
         {
-            Parcel x = (Parcel) MemberwiseClone();
+            Parcel x = (Parcel)MemberwiseClone();
 
             x.NumberStr = NumberStr;
             x.Width = Width;

@@ -25,7 +25,7 @@ namespace USC.GISResearchLab.Common.Core.Geographics.Features.Streets
             get { return _CensusBlock; }
             set { _CensusBlock = value; }
         }
-        
+
         #endregion
 
     }

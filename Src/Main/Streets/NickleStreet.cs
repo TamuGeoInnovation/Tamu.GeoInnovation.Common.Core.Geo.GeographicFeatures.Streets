@@ -30,12 +30,12 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
         public AddressRange AddressRangeSuper { get; set; }
 
         public double NumberOfLots { get; set; }
-        
+
         public string LaneCategoryStr { get; set; }
         public double NumberOfLanes { get; set; }
         public bool IsWesternHemisphere { get; set; }
         public bool IsNorthernHemisphere { get; set; }
-        
+
 
         public StreetNumberRangeParity StreetNumberRangeParity { get; set; }
         public StreetNumberRangeType StreetNumberRangeType { get; set; }
@@ -43,7 +43,8 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 
         #endregion
 
-        public NickleStreet() {
+        public NickleStreet()
+        {
             Geometry = new Point(0, 0);
             GeometrySource = new Polygon();
         }
@@ -184,7 +185,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 
         public new Street Clone()
         {
-            Street x = (Street) MemberwiseClone();
+            Street x = (Street)MemberwiseClone();
             return x;
         }
 

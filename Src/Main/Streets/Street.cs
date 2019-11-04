@@ -133,7 +133,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
         }
 
         public Street(Point start, Point end)
-            :base(start, end)
+            : base(start, end)
         {
             Start = start;
             End = end;
@@ -529,14 +529,14 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
         //{
         //    Point ret = new Point();
 
-            
+
         //    double lotRatio = ((lotNumber + .5) / numberOfLots);
         //    double lotCenterLat = (Start.Y + (lotRatio * (End.Y - Start.Y)));
         //    double lotCenterLon = (Start.X + (lotRatio * (End.X - Start.X)));
 
         //    ret.Y = lotCenterLat;
         //    ret.X = lotCenterLon;
-            
+
         //    return ret;
         //}
 
@@ -591,8 +591,8 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 
         public new Street Clone()
         {
-            Street x = (Street) MemberwiseClone();
-            x.Parcels = (Parcel[]) Parcels.Clone();
+            Street x = (Street)MemberwiseClone();
+            x.Parcels = (Parcel[])Parcels.Clone();
             return x;
         }
 

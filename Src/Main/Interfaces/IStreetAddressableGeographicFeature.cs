@@ -3,7 +3,7 @@ using USC.GISResearchLab.Common.Geometries;
 
 namespace USC.GISResearchLab.Common.Core.Geographics.Features.Interfaces
 {
-    public interface IStreetAddressableGeographicFeature: IStreetAddressBase
+    public interface IStreetAddressableGeographicFeature : IStreetAddressBase
     {
 
         #region Properties

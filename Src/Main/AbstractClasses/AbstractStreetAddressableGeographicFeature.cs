@@ -4,7 +4,7 @@ using USC.GISResearchLab.Common.Geometries;
 
 namespace USC.GISResearchLab.Common.Core.Geographics.Features.Interfaces
 {
-    public abstract class AbstractStreetAddressableGeographicFeature: AbstractStreetAddressBase, IStreetAddressableGeographicFeature
+    public abstract class AbstractStreetAddressableGeographicFeature : AbstractStreetAddressBase, IStreetAddressableGeographicFeature
     {
 
         #region Properties
@@ -40,7 +40,7 @@ namespace USC.GISResearchLab.Common.Core.Geographics.Features.Interfaces
         }
 
         // this is from http://social.msdn.microsoft.com/Forums/en/sqlspatial/thread/e2e2fca8-2ef2-483c-ba42-c8a71e8fb00c
-        public void SetGeometryFromWKB( byte[] wkb, int srid)
+        public void SetGeometryFromWKB(byte[] wkb, int srid)
         {
 
             if (Geometry != null)

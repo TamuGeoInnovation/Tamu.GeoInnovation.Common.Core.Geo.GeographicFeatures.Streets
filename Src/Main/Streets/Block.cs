@@ -3,9 +3,9 @@ using USC.GISResearchLab.Common.Utils.Strings;
 
 namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 {
-	/// <summary>
-	/// Summary description for SimpleSegmentBlockGroup.
-	/// </summary>
+    /// <summary>
+    /// Summary description for SimpleSegmentBlockGroup.
+    /// </summary>
     public class Block : Polygon
     {
 
@@ -15,7 +15,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
         private Street[] _Streets;
         private string _BlockGroupError;
 
-        
+
         public int NumberOfSegments
         {
             get { return _NumberOfSegments; }

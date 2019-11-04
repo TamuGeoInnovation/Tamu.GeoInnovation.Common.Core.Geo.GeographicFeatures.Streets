@@ -5,10 +5,10 @@ using USC.GISResearchLab.Common.Utils.Strings;
 
 namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 {
-	/// <summary>
-	/// Summary description for AddressSegment.
-	/// </summary>
-	public class AddressRange
+    /// <summary>
+    /// Summary description for AddressSegment.
+    /// </summary>
+    public class AddressRange
     {
         #region Properties
 
@@ -268,53 +268,53 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
             return count;
         }
 
-		public void addAddress(int number)
-		{
-			if (Addresses == null)
-			{
-				Addresses = new int[1];
-				Addresses[0] = number;
-			}
-			else
-			{
-				int [] old = Addresses;
-				Addresses = new int[old.Length + 1];
-				for (int i=0; i<old.Length; i++)
-				{
-					Addresses[i] = old[i];
-				}
-				Addresses[Addresses.Length-1] = number;
-			}
-		}
+        public void addAddress(int number)
+        {
+            if (Addresses == null)
+            {
+                Addresses = new int[1];
+                Addresses[0] = number;
+            }
+            else
+            {
+                int[] old = Addresses;
+                Addresses = new int[old.Length + 1];
+                for (int i = 0; i < old.Length; i++)
+                {
+                    Addresses[i] = old[i];
+                }
+                Addresses[Addresses.Length - 1] = number;
+            }
+        }
 
-		public int getAddressAt(int index)
-		{
-			return Addresses[index];
-		}
+        public int getAddressAt(int index)
+        {
+            return Addresses[index];
+        }
 
-		public int[] getAddresses()
-		{
-			return Addresses;
-		}
+        public int[] getAddresses()
+        {
+            return Addresses;
+        }
 
-		public int getNumberOfAddresses()
-		{
-			int ret = 0;
-			if (Addresses != null)
-			{
-				ret = Addresses.Length;
-			}
-			return ret;
-		}
+        public int getNumberOfAddresses()
+        {
+            int ret = 0;
+            if (Addresses != null)
+            {
+                ret = Addresses.Length;
+            }
+            return ret;
+        }
 
         public bool Contains(int number)
         {
             return Contains(number, false);
         }
 
-		public bool Contains(int number, bool useActualValues)
-		{
-			bool ret = false;
+        public bool Contains(int number, bool useActualValues)
+        {
+            bool ret = false;
             if (IsValidRange)
             {
                 if (number > 0)
@@ -341,7 +341,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
                 }
             }
             return ret;
-		}
+        }
 
         public bool ContainsActualValue(int number)
         {
@@ -598,100 +598,100 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
             return ret;
         }
 
-		public int getIndexOf(int number)
-		{
-			int ret = -1;
-			for (int i=0; i<getNumberOfAddresses(); i++)
-			{
-				if (getAddressAt(i) == number)
-				{
-					ret = i;
-				}
-			}
-			return ret;
-		}
+        public int getIndexOf(int number)
+        {
+            int ret = -1;
+            for (int i = 0; i < getNumberOfAddresses(); i++)
+            {
+                if (getAddressAt(i) == number)
+                {
+                    ret = i;
+                }
+            }
+            return ret;
+        }
 
 
-		public int getClosestNumberTo(int number)
-		{
-			int ret = -1;
-			int closestIndex = getClosestIndexTo(number);
-			if (closestIndex >= 0)
-			{
-				ret = getAddressAt(closestIndex);
-			}
-			return ret;
-		}
+        public int getClosestNumberTo(int number)
+        {
+            int ret = -1;
+            int closestIndex = getClosestIndexTo(number);
+            if (closestIndex >= 0)
+            {
+                ret = getAddressAt(closestIndex);
+            }
+            return ret;
+        }
 
-		public int getClosestIndexTo(int number)
-		{
-			int closest = -1;
-			for (int i=0; i<getNumberOfAddresses(); i++)
-			{
-				if (closest < 0)
-				{
-					closest = 0;
-				}
-				int current = getAddressAt(i);
-				
-				if ((Math.Abs(current - number)) < (Math.Abs(getAddressAt(closest) - number)))
-				{
-					closest = i;
-					if ((Math.Abs(getAddressAt(closest) - number) == 0))
-					{
-						i = getNumberOfAddresses();
-					}
-				}
-				
-			}
-			return closest;
-		}
+        public int getClosestIndexTo(int number)
+        {
+            int closest = -1;
+            for (int i = 0; i < getNumberOfAddresses(); i++)
+            {
+                if (closest < 0)
+                {
+                    closest = 0;
+                }
+                int current = getAddressAt(i);
 
-		public int jumpIterator(int index, int position, bool oddOrEvenOnly)
-		{
-			int ret;
+                if ((Math.Abs(current - number)) < (Math.Abs(getAddressAt(closest) - number)))
+                {
+                    closest = i;
+                    if ((Math.Abs(getAddressAt(closest) - number) == 0))
+                    {
+                        i = getNumberOfAddresses();
+                    }
+                }
 
-			// if we found less than 500 addresses by passing no address, then we should exit the range loop
-			if (position == 0)
-			{
-				ret = getNumberOfAddresses() + 1;
-			}
-				// else we should jump to the next number in the current position of the addressRange
-			else
-			{
-				int newAddress = jumpAddress(index, position, oddOrEvenOnly);
-				if (Contains(newAddress))
-				{
-					ret = getIndexOf(newAddress);
-				}
-				else
-				{
-					ret = getNumberOfAddresses() + 1;
-				}
-			}
-			return ret;
-		}
+            }
+            return closest;
+        }
 
-		public int jumpAddress(int index, int position, bool oddOrEvenOnly)
-		{
-			int ret = -1;
-			if (position > 0)
-			{
-				int oldValue = getAddressAt(index);
-				int exp = (oldValue.ToString().Length) - position;
-				int add = (int) Math.Pow(10.0, exp);
-				ret = oldValue + add;
-				if (oddOrEvenOnly)
-				{
-					ret++;
-				}
-			}
-			return ret;
-		}
+        public int jumpIterator(int index, int position, bool oddOrEvenOnly)
+        {
+            int ret;
+
+            // if we found less than 500 addresses by passing no address, then we should exit the range loop
+            if (position == 0)
+            {
+                ret = getNumberOfAddresses() + 1;
+            }
+            // else we should jump to the next number in the current position of the addressRange
+            else
+            {
+                int newAddress = jumpAddress(index, position, oddOrEvenOnly);
+                if (Contains(newAddress))
+                {
+                    ret = getIndexOf(newAddress);
+                }
+                else
+                {
+                    ret = getNumberOfAddresses() + 1;
+                }
+            }
+            return ret;
+        }
+
+        public int jumpAddress(int index, int position, bool oddOrEvenOnly)
+        {
+            int ret = -1;
+            if (position > 0)
+            {
+                int oldValue = getAddressAt(index);
+                int exp = (oldValue.ToString().Length) - position;
+                int add = (int)Math.Pow(10.0, exp);
+                ret = oldValue + add;
+                if (oddOrEvenOnly)
+                {
+                    ret++;
+                }
+            }
+            return ret;
+        }
 
         public override string ToString()
         {
             return FromAddress + "-" + ToAddress;
         }
-	}
+    }
 }

@@ -43,7 +43,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
         }
 
         public TwoSidedStreet(Point start, Point end)
-            :base(start, end)
+            : base(start, end)
         {
             Start = start;
             End = end;

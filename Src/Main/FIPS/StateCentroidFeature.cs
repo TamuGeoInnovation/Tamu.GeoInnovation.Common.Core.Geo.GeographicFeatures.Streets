@@ -1,9 +1,9 @@
 namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.States
 {
-	/// <summary>
-	/// Summary description for State.
-	/// </summary>
-	public class StateCentroidFeature : FIPSPointFeature
+    /// <summary>
+    /// Summary description for State.
+    /// </summary>
+    public class StateCentroidFeature : FIPSPointFeature
     {
         #region Properties
 
@@ -11,5 +11,5 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.States
         public string StateAbreviation { get; set; }
 
         #endregion
-	}
+    }
 }

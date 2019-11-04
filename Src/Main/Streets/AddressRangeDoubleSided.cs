@@ -1,9 +1,9 @@
 namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
 {
-	/// <summary>
-	/// Summary description for AddressSegmentDoubleSided.
-	/// </summary>
-	public class AddressRangeDoubleSided
+    /// <summary>
+    /// Summary description for AddressSegmentDoubleSided.
+    /// </summary>
+    public class AddressRangeDoubleSided
     {
         #region Properties
         private string _Id;
@@ -34,36 +34,36 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
         #endregion
 
         public AddressRangeDoubleSided()
-		{
-		}
+        {
+        }
 
-		public AddressRange getEvenSide()
-		{
-			AddressRange ret;
-			if (Left.IsEven)
-			{
-				ret = Left;
-			}
-			else
-			{
-				ret = Right;
-			}
-			return ret;
-			
-		}
+        public AddressRange getEvenSide()
+        {
+            AddressRange ret;
+            if (Left.IsEven)
+            {
+                ret = Left;
+            }
+            else
+            {
+                ret = Right;
+            }
+            return ret;
 
-		public AddressRange getOddSide()
-		{
-			AddressRange ret;
-			if (Left.IsOdd)
-			{
-				ret = Left;
-			}
-			else
-			{
-				ret = Right;
-			}
-			return ret;
-		}
-	}
+        }
+
+        public AddressRange getOddSide()
+        {
+            AddressRange ret;
+            if (Left.IsOdd)
+            {
+                ret = Left;
+            }
+            else
+            {
+                ret = Right;
+            }
+            return ret;
+        }
+    }
 }

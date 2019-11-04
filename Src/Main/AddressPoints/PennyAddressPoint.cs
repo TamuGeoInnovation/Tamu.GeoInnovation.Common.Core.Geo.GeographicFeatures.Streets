@@ -19,9 +19,9 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.AddressPoints
 
         public string StreetId { get; set; }
         public string Number { get; set; }
-        public string NumberFractional { get; set; }        
+        public string NumberFractional { get; set; }
 
-        public StreetNumberRangeParity StreetNumberParity { get; set; }        
+        public StreetNumberRangeParity StreetNumberParity { get; set; }
 
         #endregion
 
