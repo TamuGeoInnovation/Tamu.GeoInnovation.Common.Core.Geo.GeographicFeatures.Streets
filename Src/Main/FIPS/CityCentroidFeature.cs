@@ -6,13 +6,8 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.Cities
     public class CityCentroidFeature : FIPSPointFeature
     {
         #region Properties
-        private int _Place;
 
-        public int Place
-        {
-            get { return _Place; }
-            set { _Place = value; }
-        }
+        public int Place { get; set; }
 
         #endregion
     }

@@ -7,12 +7,7 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.Counties
     {
         #region Properties
 
-        private int _County;
-        public int County
-        {
-            get { return _County; }
-            set { _County = value; }
-        }
+        public int County { get; set; }
 
         public string CountyName { get; set; }
 

@@ -7,21 +7,10 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.FIPS.CountySubregions
     {
         #region Properties
 
-        private int _County;
-        private string _CountySubregion;
 
-        public int County
-        {
-            get { return _County; }
-            set { _County = value; }
-        }
 
-        public string CountySubregion
-        {
-            get { return _CountySubregion; }
-            set { _CountySubregion = value; }
-        }
-
+        public int County { get; set; }
+        public string CountySubregion { get; set; }
         #endregion
 
         public CountySubregionCentroidFeature()

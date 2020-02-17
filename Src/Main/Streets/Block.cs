@@ -10,32 +10,11 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
     {
 
         #region Properties
-        private int _NumberOfSegments;
-        private string _InfoString;
-        private Street[] _Streets;
-        private string _BlockGroupError;
 
-
-        public int NumberOfSegments
-        {
-            get { return _NumberOfSegments; }
-            set { _NumberOfSegments = value; }
-        }
-        public string InfoString
-        {
-            get { return _InfoString; }
-            set { _InfoString = value; }
-        }
-        public Street[] Streets
-        {
-            get { return _Streets; }
-            set { _Streets = value; }
-        }
-        public string BlockGroupError
-        {
-            get { return _BlockGroupError; }
-            set { _BlockGroupError = value; }
-        }
+        public int NumberOfSegments { get; set; }
+        public string InfoString { get; set; }
+        public Street[] Streets { get; set; }
+        public string BlockGroupError { get; set; }
         #endregion
 
         public Block()

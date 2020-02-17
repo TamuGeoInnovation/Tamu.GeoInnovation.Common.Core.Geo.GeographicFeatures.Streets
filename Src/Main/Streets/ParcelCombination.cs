@@ -5,40 +5,20 @@ namespace USC.GISResearchLab.Common.GeographicFeatures.Streets
     /// </summary>
     public class ParcelCombination
     {
-        private int _Id;
-        private double _Error;
-        private Street _Street;
-        private double _NumberOfLots;
 
         public ParcelCombination()
         {
-            _Id = -1;
-            _Error = -1;
-            _NumberOfLots = 0;
+            Id = -1;
+            Error = -1;
+            NumberOfLots = 0;
         }
 
-        public double NumberOfLots
-        {
-            get { return _NumberOfLots; }
-            set { _NumberOfLots = value; }
-        }
+        public double NumberOfLots { get; set; }
 
-        public double Error
-        {
-            get { return _Error; }
-            set { _Error = value; }
-        }
+        public double Error { get; set; }
 
-        public int Id
-        {
-            get { return _Id; }
-            set { _Id = value; }
-        }
+        public int Id { get; set; }
 
-        public Street Street
-        {
-            get { return _Street; }
-            set { _Street = value; }
-        }
+        public Street Street { get; set; }
     }
 }
