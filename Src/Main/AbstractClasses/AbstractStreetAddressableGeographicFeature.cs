@@ -12,6 +12,23 @@ namespace USC.GISResearchLab.Common.Core.Geographics.Features.Interfaces
         public Geometry Geometry { get; set; }
         public Geometry GeometrySource { get; set; }
 
+        public string CensusBlock { get; set; }
+        public string CensusBlockGroup { get; set; }
+        public string CensusTract { get; set; }
+
+        public string CensusYear { get; set; }
+        public string CensusNAACCRCertCode { get; set; }
+        public string CensusNAACCRCertType { get; set; }
+        public string CensusCountyFips { get; set; }
+        public string CensusPlaceFips { get; set; }
+        public string CensusMSAFips { get; set; }
+        public string CensusMCDFips { get; set; }
+        public string CensusCBSAFips { get; set; }
+        public string CensusCBSAMicro { get; set; }
+        public string CensusMetDivFips { get; set; }
+        public string CensusStateFips { get; set; }
+
+
         #endregion
 
         public AbstractStreetAddressableGeographicFeature()
