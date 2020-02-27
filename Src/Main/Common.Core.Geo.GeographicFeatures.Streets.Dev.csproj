@@ -97,11 +97,6 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -163,16 +158,6 @@
     <ProjectReference Include="..\..\..\Common.Core.Addresses\Src\Main\Common.Core.Addresses.Dev.csproj">
       <Project>{29C0949B-4D41-4138-B59B-6DE4A6A1774E}</Project>
       <Name>Common.Core.Addresses.Dev</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Common.Core.Colors\Src\Main\Common.Core.Colors.Dev.csproj">
-      <Project>{34A8FC48-16D5-4937-8D33-14AE2EE362F4}</Project>
-      <Name>Common.Core.Colors.Dev</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Common.Core.Drawing\Src\Main\Common.Core.Drawing.Dev.csproj">
-      <Project>{282C24E4-E164-4679-AAD4-E640B30404DC}</Project>
-      <Name>Common.Core.Drawing.Dev</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common.Core.ExceptionHandling\Src\Main\Common.Core.ExceptionHandling.Dev.csproj">
